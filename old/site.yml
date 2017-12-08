@@ -1,9 +1,7 @@
 ---
 - name: get osp facts
-  gather_facts: false
-  hosts: jumpbox
-  roles:
-    - osp-facts
+  import_role:
+    name: osp-facts
     
 - name: configuration
   hosts: all
