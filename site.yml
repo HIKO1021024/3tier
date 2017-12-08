@@ -24,7 +24,7 @@
   become: true
   hosts: appdbs
   roles:
-    - geerlingguy.postgresql
+    - {geerlingguy.postgresql}
 
 - name: deploy apache
   #gather_facts: false
